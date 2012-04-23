@@ -20,6 +20,8 @@ An example of Rails application with multiple tag select box using Tag-it! jQuer
 
 Added 'show_tag_url' option. If it is specified each tag will become a link with path show_tag_url/tag.
 
+Pay attention, that if onTagClicked and show_tag_url options are both specified after onTagClicked there will be redirect to tag page.
+
 ~~~javascript
 $(document).ready(function() {
   $("#mytags").tagit({
