@@ -1,0 +1,10 @@
+%h1 All submits
+%table.submits
+  %tr
+    %th Tags
+    %th Created_at, ago
+  - @submits.each do |s|
+    %tr
+      %td= s.tags.map(&:name).join(', ')
+      %td= time_ago_in_words s.created_at
+%h1= link_to 'Back', new_submit_path
