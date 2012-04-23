@@ -1,6 +1,6 @@
 # [Tag-it!](https://github.com/aehlke/tag-it) with autocomplete
 
-An example of Rails application with multiple tag select box using Tag-it! jQuery plugin and autocomplete
+An example of Rails application with multiple tag select box using Tag-it! jQuery plugin and autocomplete.
 
 ## Example
 
@@ -18,7 +18,7 @@ An example of Rails application with multiple tag select box using Tag-it! jQuer
 
 ## Modifications in Tag-it!
 
-Added 'tagSource' option. If it is specified each tag will become a link with path tagSource/tag. 
+Added 'tagSource' option. If it is specified each tag will become a link with path tagSource/tag.
 
 ## Acknowledgements
 
