@@ -18,7 +18,27 @@ An example of Rails application with multiple tag select box using Tag-it! jQuer
 
 ## Modifications in Tag-it!
 
-Added 'tagSource' option. If it is specified each tag will become a link with path tagSource/tag.
+Added 'show_tag_url' option. If it is specified each tag will become a link with path show_tag_url/tag.
+
+~~~javascript
+$(document).ready(function() {
+  $("#mytags").tagit({
+    tagSource: function(search, showChoices) {
+      var that = this;
+      $.ajax({
+        url: "/tags/autocomplete.json",
+        data: {q: search.term},
+        success: function(choices) {
+          showChoices(that._subtractArray(choices, that.assignedTags()));
+        }
+      });
+    },
+    show_tag_url: "/tags/",
+    singleField: true,
+    singleFieldNode: $('#submit_tag_names')
+  });
+});
+~~~
 
 ## Acknowledgements
 
