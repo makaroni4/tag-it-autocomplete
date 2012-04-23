@@ -1,4 +1,2 @@
-tag-it-autocomplete
-===================
-
-Tag select with Tag-it! and Autocomplete
+Tag-it! with autocomplete example
+=================================
