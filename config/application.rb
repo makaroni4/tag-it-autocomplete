@@ -52,7 +52,7 @@ module TagItWithAutocomplete
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    config.assets.enabled = false
+    config.assets.enabled = true
     config.assets.manifest = Rails.root.join("public/assets")
 
     # Version of your assets, change this if you want to expire all your assets
