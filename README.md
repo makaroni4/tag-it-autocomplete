@@ -2,6 +2,10 @@
 
 An example of Rails application with multiple tag select box using Tag-it! jQuery plugin and autocomplete
 
+## Example
+
+[http://tag-it-autocomplete.heroku.com/](http://tag-it-autocomplete.heroku.com/)
+
 ## Setup instructions for running locally
 
 * Clone the repo with
