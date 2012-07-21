@@ -17,10 +17,8 @@
     });
   });
 #tag_form
-  %h1 Select tags and submit form
+  %h1= "Select tags and submit form. #{Submit.count} submits so far."
   = form_for @submit do |f|
     = f.hidden_field :tag_names, :value => @tags.join(',')
     %ul#mytags
     = f.submit 'Submit'
-  
-  
